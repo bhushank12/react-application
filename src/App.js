@@ -1,10 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import MyApplication from './components/MyApplication';
+import { Routes, Route } from "react-router-dom";
+import Settings from './components/Settings';
+import Profile from './components/Profile';
+import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <MyApplication></MyApplication>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </>
   );
 }
 

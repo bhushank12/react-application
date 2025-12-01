@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.main-navbar {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+  margin-right: 5px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard-heading {
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+}
