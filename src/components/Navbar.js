@@ -1,16 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { FiUser, FiSettings } from "react-icons/fi";
+import { FiUser, FiSettings, FiHome } from "react-icons/fi";
 import "../App.css";
 
 function Navbar() {
   return (
     <nav className="main-navbar">
-      <h2><Link to="/" className="dashboard-heading">Dashboard</Link></h2>
+      <ul className="nav-left">
+        <li>
+          <Link to="/">
+            Dashboard
+          </Link>
+        </li>
+      </ul>
+
       <ul className="nav-links">
         <li>
           <Link to="/settings">
-            <FiSettings/>Settings
+            <FiSettings /> Settings
           </Link>
         </li>
         <li>

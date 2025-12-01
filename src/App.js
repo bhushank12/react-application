@@ -4,6 +4,7 @@ import Settings from './components/Settings';
 import Profile from './components/Profile';
 import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 Route */}
       </Routes>
     </>
   );
