@@ -3,21 +3,23 @@ import { Routes, Route } from "react-router-dom";
 import Settings from './components/Settings';
 import Profile from './components/Profile';
 import Navbar from './components/Navbar';
-import Dashboard from './components/Dashboard';
+import UserInfo from './components/UserInfo';
 import NotFound from './components/NotFound';
+import { useTheme } from './contexts/ThemeContext';
 
 function App() {
-  return (
-    <>
-      <Navbar />
+  const { theme } = useTheme();
 
+  return (
+    <div className={`app-container ${theme}`}>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<UserInfo />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Route */}
       </Routes>
-    </>
+    </div>
   );
 }
 

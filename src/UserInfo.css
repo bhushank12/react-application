@@ -1,0 +1,120 @@
+.dashboard-container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container.dark {
+  color: black;
+}
+
+section {
+  margin-bottom: 0px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: navy;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.basic-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: navy;
+}
+
+.basic-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: navy;
+}
+
+.basic-info p {
+  font-size: 1rem;
+  color: navy;
+}
+
+.education-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Experience Details */
+.experience-details .experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.experience-details p {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.experience-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-details li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.technical-skills .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.technical-skills .skills-list li {
+  background-color: #e9f7ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key-achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.key-achievements li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.summary p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}

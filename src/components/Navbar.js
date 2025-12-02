@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { FiUser, FiSettings, FiHome } from "react-icons/fi";
+import { FiUser, FiSettings } from "react-icons/fi";
 import "../App.css";
 
 function Navbar() {
@@ -8,22 +8,16 @@ function Navbar() {
     <nav className="main-navbar">
       <ul className="nav-left">
         <li>
-          <Link to="/">
-            Dashboard
-          </Link>
+          <Link to="/">Dashboard</Link>
         </li>
       </ul>
 
       <ul className="nav-links">
         <li>
-          <Link to="/settings">
-            <FiSettings /> Settings
-          </Link>
+          <Link to="/settings"><FiSettings /> Settings</Link>
         </li>
         <li>
-          <Link to="/profile">
-            <FiUser /> Profile
-          </Link>
+          <Link to="/profile"><FiUser /> Profile</Link>
         </li>
       </ul>
     </nav>
